@@ -39,7 +39,7 @@
   color: #fff;
   z-index: 0;
   position: absolute;
-  top: 15%;
+  top: 25%;
   left: 15%;
   font-family: 'Droid Sans Mono', monospace;
   object-fit: cover;
@@ -49,9 +49,30 @@
   text-align: center;
 }
 
+.card {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
 
-.return {
+.matched {
+  color: #fff;
+  text-align: center;
+  background-color: #f4b642;
+}
+
+.nomatches {
+  color: #fff;
+  text-align: center;
+  background-color: #5b5243;
+}
+
+
+.return a {
   margin-top: 30px;
+  display: block;
+  width: 20%;
+  margin: 0 auto;
 }
 
 .container {

@@ -10,13 +10,13 @@ $(document).ready(function() {
 
   if (work === "design" && company === "agency" || work === "design" && company === "small") {
     $("#design, .return").show();
-    $(".survey, #c, #ruby").hide();
-  } else if (work === "frontend" && company === "small" || work === "frontend" && company === "agency") {
+    $(".survey, .nomatches, #c, #ruby").hide();
+  } else if (work === "frontend" && company === "small" || work === "frontend" && company === "agency" || work === "frontend" && company === "enterprise") {
     $("#ruby, .return, .matched").show();
-    $(".survey, #design, #c").hide();
+    $(".survey, .nomatches, #design, #c").hide();
   } else if (computer === "pc" && company === "enterprise" || computer === "pc" && work === "backend" || company === "enterprise" && work === "backend") {
     $("#c, .return, .matched").show();
-    $(".survey, #design, #ruby").hide();
+    $(".survey, .nomatches, #design, #ruby").hide();
   } else {
     $(".nomatches, .return").show();
     $(".survey").hide();

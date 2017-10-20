@@ -6,9 +6,19 @@ $(document).ready(function() {
   var company = $("#company").val();
 
 
-  if (work === "ux" && computer === "mac" || work === "ux" && company === "agency" || computer === "mac" && comapny === "agency") {
+  if (company === "agency" && work === "ux") {
     $("#design, #return").show();
     $(".survey, #c, #ruby").hide();
+  } else if (company === "enterprise" && work === "backend") {
+    $("#c, #return").show();
+    $(".survey, #design, #ruby").hide();
+  } else if (work === "frontend" && company === "small") {
+    $("#ruby, #return").show();
+    $(".survey, #design, #c").hide();
+  } else {
+    $("#nomatches, #return").show();
+    $(".survey").hide();
+
   }
 
 

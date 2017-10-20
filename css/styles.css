@@ -1,3 +1,4 @@
+/*CSS for hidden items:*/
 #design {
   display: none;
 }
@@ -22,12 +23,35 @@
   display: none;
 }
 
-.return {
-  margin-top: 30px;
-}
-
 .invalid-feedback {
   display: none;
+}
+/*CSS for all items*/
+
+.header img {
+  width: 100%;
+  z-index: -1;
+  position: relative;
+}
+
+.header h1 {
+  text-align: center;
+  color: #fff;
+  z-index: 0;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  font-family: 'Droid Sans Mono', monospace;
+  object-fit: cover;
+}
+
+.card-title {
+  text-align: center;
+}
+
+
+.return {
+  margin-top: 30px;
 }
 
 .container {

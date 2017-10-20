@@ -29,3 +29,7 @@
 .invalid-feedback {
   display: none;
 }
+
+.container {
+  margin-bottom: 40px;
+}

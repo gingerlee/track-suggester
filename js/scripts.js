@@ -7,7 +7,6 @@ $(document).ready(function() {
   var firstName = $("#first").val();
   var lastName = $("#last").val();
 
-
   if (work === "design" && company === "agency" || work === "design" && company === "small") {
     $("#design, .return").show();
     $(".survey, .nomatches, #c, #ruby").hide();
@@ -23,19 +22,16 @@ $(document).ready(function() {
   }
 
   if (firstName === "")  {
-  $("input#first").addClass("is-invalid");
-  $(".invalid-feedback#first, .survey").show();
-  $("#c, #design, #ruby, .return").hide();
-}
+    $("input#first").addClass("is-invalid");
+    $(".invalid-feedback#first, .survey").show();
+    $("#c, #design, #ruby, .return, .matched").hide();
+  }
 
-if (lastName === "")  {
-$("input#last").addClass("is-invalid");
-$(".invalid-feedback#last, .survey").show();
-$("#c, #design, #ruby, .return").hide();
-}
-
-
-
+  if (lastName === "")  {
+    $("input#last").addClass("is-invalid");
+    $(".invalid-feedback#last, .survey").show();
+    $("#c, #design, #ruby, .return, .matched").hide();
+  }
 
   });
 });

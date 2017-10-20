@@ -9,3 +9,15 @@
 #ruby {
   display: none;
 }
+
+#return {
+  display: none;
+}
+
+.return {
+  margin-top: 30px;
+}
+
+/*.invalid-feedback {
+  display: none;
+}*/

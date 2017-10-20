@@ -7,9 +7,9 @@ $(document).ready(function() {
 
 
   if (work === "ux" && computer === "mac" || work === "ux" && company === "agency" || computer === "mac" && comapny === "agency") {
-    $("#design").show();
+    $("#design, #return").show();
     $(".survey, #c, #ruby").hide();
-  } 
+  }
 
 
   });

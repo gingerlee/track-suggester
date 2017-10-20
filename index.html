@@ -2,7 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css/stylest.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
     <title>Track Suggester</title>
@@ -21,8 +21,8 @@
             Quiz
           </div>
           <div class="card-body">
-            <h4 class="card-title">Track Suggester Survey</h4>
-            <p class="card-text">Fill out the questions below to see what Epicodus track is best suited for you.</p>
+            <h4 class="card-title">SURVEY</h4>
+            <p class="card-text"><strong>Instructions:</strong> Fill out the questions below to see what Epicodus track is best suited for you.</p>
             <form>
               <div class="form-group">
                 <div class="row">
@@ -37,13 +37,26 @@
                 </div>
               </div>
               <div class="form-group">
-                <label for="exampleFormControlSelect1">Example select</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
+                <label for="computer">What type of computer do you prefer?</label>
+                <select class="form-control" id="computer">
+                  <option value="mac">Mac</option>
+                  <option value="pc">PC</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="work">What type of work interests you most?</label>
+                <select class="form-control" id="work">
+                  <option value="frontend">Front-end Development</option>
+                  <option value="backend">Back-end Development</option>
+                  <option value="design">Design</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="company">What type of company do you ideally want to work for?</label>
+                <select class="form-control" id="company">
+                  <option value="enterprise">An enterprise</option>
+                  <option value="agency">An agency</option>
+                  <option value="small">A small dev shop</option>
                 </select>
               </div>
               <div class="form-group">
@@ -53,14 +66,44 @@
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
           </div>
-        </div>
-        <div class="card-footer text-muted text-center">
-          Dreams do come True
+          <div class="card-footer text-muted text-center">
+            Dreams do come True
+          </div>
         </div>
       </div>
-    </div>
-    <div class="results">
-
+      <div id="results">
+        <div class="row">
+          <div class="col-md-4" id="design">
+            <div class="card" style="width: 20rem;">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">CSS/Design</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" id="c">
+            <div class="card" style="width: 20rem;">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">C#/.NET</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" id="ruby">
+            <div class="card" style="width: 20rem;">
+              <img class="card-img-top" src="..." alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">Ruby/Rails</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

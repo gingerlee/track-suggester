@@ -10,11 +10,15 @@
   display: none;
 }
 
-#return {
+.return {
   display: none;
 }
 
-#nomatches {
+.nomatches {
+  display: none;
+}
+
+.matched {
   display: none;
 }
 
@@ -22,6 +26,6 @@
   margin-top: 30px;
 }
 
-/*.invalid-feedback {
+.invalid-feedback {
   display: none;
-}*/
+}

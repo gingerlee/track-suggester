@@ -4,22 +4,37 @@ $(document).ready(function() {
   var computer = $("#computer").val();
   var work = $("#work").val();
   var company = $("#company").val();
+  var firstName = $("#first").val();
+  var lastName = $("#last").val();
 
 
-  if (company === "agency" && work === "ux") {
-    $("#design, #return").show();
+  if (work === "design" && company === "agency" || work === "design" && company === "small") {
+    $("#design, .return").show();
     $(".survey, #c, #ruby").hide();
-  } else if (company === "enterprise" && work === "backend") {
-    $("#c, #return").show();
-    $(".survey, #design, #ruby").hide();
-  } else if (work === "frontend" && company === "small") {
-    $("#ruby, #return").show();
+  } else if (work === "frontend" && company === "small" || work === "frontend" && company === "agency") {
+    $("#ruby, .return").show();
     $(".survey, #design, #c").hide();
-  } else {
-    $("#nomatches, #return").show();
-    $(".survey").hide();
+  } else if (computer === "pc" || company === "enterprise" || work === "backend" || company === "enterprise" && work === "backend") {
+    $("#c, .return").show();
 
+  } else {
+    $(".nomatches, .return").show();
+    $(".survey").hide();
   }
+
+  if (firstName === "")  {
+  $("input#first").addClass("is-invalid");
+  $(".invalid-feedback#first, .survey").show();
+  $("#c, #design, #ruby").hide();
+}
+
+if (lastName === "")  {
+$("input#last").addClass("is-invalid");
+$(".invalid-feedback#last, .survey").show();
+$("#c, #design, #ruby").hide();
+}
+
+
 
 
   });

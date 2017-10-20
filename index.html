@@ -28,14 +28,14 @@
                 <div class="row">
                   <div class="col">
                     <label for="name">First Name</label>
-                    <input id="first" type="name" class="form-control" placeholder="First name">
-                    <!-- <div class="invalid-feedback">
+                    <input type="text" class="form-control" id="first" placeholder="First name">
+                    <div class="invalid-feedback">
                       Please provide first name.
-                    </div> -->
+                    </div>
                   </div>
                   <div class="col">
                     <label for="name">Last Name</label>
-                    <input type="text" class="form-control" placeholder="Last name">
+                    <input type="text" class="form-control" id="last" placeholder="Last name">
                     <div class="invalid-feedback">
                       Please provide last name.
                     </div>
@@ -54,15 +54,15 @@
                 <select class="form-control" id="work">
                   <option value="frontend">Front-end Development</option>
                   <option value="backend">Back-end Development</option>
-                  <option value="ux">UX/UI</option>
+                  <option value="design">Design</option>
                 </select>
               </div>
               <div class="form-group">
                 <label for="company">What type of company do you ideally want to work for?</label>
                 <select class="form-control" id="company">
+                  <option value="small">A small web dev shop</option>
                   <option value="enterprise">An enterprise</option>
                   <option value="agency">An agency</option>
-                  <option value="small">A small dev shop</option>
                 </select>
               </div>
               <div class="form-group">
@@ -78,6 +78,10 @@
         </div>
       </div>
       <div id="results">
+        <div class="matched">
+          <h2><strong>Congrats!</strong></h2>
+          <h5>You matched with the track below:</h5>
+        </div>
         <div class="row">
           <div class="col-md-4">
             <div class="card" id="design" style="width: 20rem;">
@@ -94,7 +98,7 @@
               <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
               <div class="card-body">
                 <h4 class="card-title">C#/.NET</h4>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">C# is most popular among bigger established businesses, often for building internal software. Because it's been around for a long time and has the backing of Microsoft, it is one of the most in-demand languages in the job market. C# has also been going through a bit of a rebirth lately, with Microsoft open sourcing the language and surrounding platform, porting it to run on Mac and Linux, and incorporating many of the best features of other languages. If you like the idea of working for a larger company on business software, C# is a great choice.</p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
@@ -111,11 +115,11 @@
           </div>
         </div>
       </div>
-      <div>
-        <h5 id="nomatches">No Matches Found, try again</h5>
+      <div class="nomatches">
+        <h5>No Matches Found, try again</h5>
       </div>
       <div class="return">
-        <a href="index.html" class="btn btn-primary" id="return">Return back to survey</a>
+        <a href="index.html" class="btn btn-primary">Return back to survey</a>
       </div>
     </div>
   </body>

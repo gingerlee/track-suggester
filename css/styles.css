@@ -41,8 +41,8 @@ body {
   color: #fff;
   z-index: 0;
   position: absolute;
-  top: 25%;
-  left: 20%;
+  top: 15%;
+  left: 10%;
   font-family: 'Droid Sans Mono', monospace;
   object-fit: cover;
 }
